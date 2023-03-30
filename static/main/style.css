@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -9,6 +9,34 @@ body{
     justify-content: center;
     font-family: 'Times New Roman', serif;
 }
-h1{
+
+h1 {
     text-align: center;
+}
+
+.buttons{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.button {
+    background-color: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: relative;
+    text-align: center;
+    transition: box-shadow .2s, -ms-transform .1s, -webkit-transform .1s, transform .1s;
+    width: 40%;
+}
+
+.button:active {
+    border-color: #000000;
+    transform: scale(.9)
 }

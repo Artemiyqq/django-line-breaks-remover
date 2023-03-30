@@ -19,5 +19,7 @@ from main import views as main_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_views.index, name='main')
+    path('', main_views.index, name='main'),
+    path('/paste_the_text', name='paste_the_text'),
+    path('/upload_the_file', name='upload_the_file'),
 ]
