@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', serif;
+}
+
+label {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin-top: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+input:active {
+    border-color: #000000;
+    transform: scale(.9)
+}
+
+textarea {
+    width: 45%;
+    min-width: 350px;
+    min-height: 450px;
+    border-radius: 8px;
+}

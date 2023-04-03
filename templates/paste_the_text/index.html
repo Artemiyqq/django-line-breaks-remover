@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +6,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'paste_the_text/style.css' %}">
+    <title>Paste Text</title>
 </head>
 
 <body>
-    
+    <form method="post">
+        {% csrf_token %}
+        <label for="text">Insert your text below:</label>
+        <textarea name="text"></textarea>
+        <input type="submit">
+    </form>
 </body>
 
 </html>

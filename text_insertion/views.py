@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def get_the_text(request):
+    if request.method == 'POST':
+        pass
+    return render(request, 'paste_the_text/index.html')
+
+
+def get_the_file(request):
+    pass

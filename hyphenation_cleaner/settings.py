@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'test_insertion',
+    'text_insertion',
 ]
 
 MIDDLEWARE = [
