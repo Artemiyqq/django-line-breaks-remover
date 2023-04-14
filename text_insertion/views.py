@@ -8,4 +8,6 @@ def get_the_text(request):
 
 
 def get_the_file(request):
-    pass
+    if request.method == 'POST':
+        pass
+    return render(request, 'upload_the_file/index.html')
