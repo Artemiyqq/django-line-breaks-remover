@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from main import views as main_views
 from text_insertion import views as text_insertion_views
+from file_upload import views as file_upload_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index, name='main'),
     path('paste_the_text', text_insertion_views.get_the_text,
          name='paste_the_text'),
-    path('upload_the_file', text_insertion_views.get_the_file,
+    path('upload_the_file', file_upload_views.process_file,
          name='upload_the_file'),
 ]
